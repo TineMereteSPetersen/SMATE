@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu__language {
+    display: flex;
+    flex-direction: row;
+}
