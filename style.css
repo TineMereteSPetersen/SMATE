@@ -1,7 +1,17 @@
 body {
     margin: 0;
-    background-color: #0077c8;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
 
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.centerwrap {
+    display: grid;
+    justify-content: center;
 }
 
 /* MENU !!! */
@@ -43,7 +53,7 @@ body {
 }
 
 .menu__main {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .menu__item a {
@@ -58,14 +68,68 @@ body {
     color: #0077c8;
 }
 
-.menu__item--active a {
+.menu__item--active {
     text-decoration: wavy;
     color: #0077c8;
     text-decoration: underline;
-    text-decoration-thickness: 0.15em;
+    text-decoration-thickness: 0.15rem;
 }
 
 /* MAIN */
 main {
     margin-top: 110px;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container--grey {
+    background-color: #efefef;
+}
+
+/* Home - Intro */
+
+.intro__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom:40px;
+}
+
+.intro__wrapperInner {
+    text-align: center;
+}
+
+.intro__icon {
+    width: 100px;
+}
+
+.intro__title {
+    font-size: 1.5rem;
+    color: #EA8B2D;
+    text-transform: uppercase;
+}
+
+/* NPI Consulting Services */
+
+.npiconsult__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.npiconsult__wrapper img {
+    display: block;
+    max-width: 500px;
+}
+
+.npiconsult__wrapper a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0077c8;
+    margin-top: 10px;
 }
