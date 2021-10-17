@@ -140,3 +140,18 @@ main {
     color: #0077c8;
     margin-top: 10px;
 }
+
+
+/* Footer */
+
+.footer--wrapper{
+    display: block;
+    width: 100%;
+    color: rgb(211, 210, 210);
+    background-color: #1F1F1F;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+}
