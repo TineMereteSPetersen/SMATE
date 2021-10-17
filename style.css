@@ -141,6 +141,18 @@ main {
     margin-top: 10px;
 }
 
+/* About */
+.about__banner{
+
+}
+
+.about__img--tech{
+    display: block;
+    max-width: 500px;
+    
+}
+
+
 
 /* Footer */
 
@@ -152,6 +164,6 @@ main {
     font-family: 'Open Sans', sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
