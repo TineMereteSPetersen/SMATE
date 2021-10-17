@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 1px solid #0077c8;
+    width: 50%;
+}
+
+.centerwrap {
+    display: grid;
+    justify-content: center;
+}
+
+/* MENU !!! */
+.menu {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
+}
+
+.menu__list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+.menu__language {
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.logo {
+    width: 178px;
+    max-height: 32px;
+    align-self: center;
+}
+
+.menu__main {
+    font-size: 1.5rem;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.menu__item a:hover {
+    color: #0077c8;
+}
+
+.menu__item--active {
+    text-decoration: wavy;
+    color: #0077c8;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
+}
+
+/* MAIN */
+main {
+    margin-top: 110px;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container--grey {
+    background-color: #efefef;
+}
+
+/* Home - Intro */
+
+.intro__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom:40px;
+}
+
+.intro__wrapperInner {
+    text-align: center;
+}
+
+.intro__icon {
+    width: 100px;
+}
+
+.intro__title {
+    font-size: 1.5rem;
+    color: #EA8B2D;
+    text-transform: uppercase;
+}
+
+/* NPI Consulting Services */
+
+.npiconsult__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.npiconsult__wrapper img {
+    display: block;
+    max-width: 500px;
+}
+
+.npiconsult__wrapper a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0077c8;
+    margin-top: 10px;
+}
+
+/* About */
+.about__banner{
+
+}
+
+.about__img--tech{
+    display: block;
+    max-width: 500px;
+    
+}
+
+
+
+/* Footer */
+
+.footer--wrapper{
+    display: block;
+    width: 100%;
+    color: rgb(211, 210, 210);
+    background-color: #1F1F1F;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 0;
+}
