@@ -19,8 +19,20 @@ hr {
     justify-content: center;
 }
 
-/* MENU !!! */
+/*--------------------------------------------------------------*/
+/* MENU --------------------------------------------------------*/
+/*--------------------------------------------------------------*/
 
+header {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
+}
 .menu__list li {
     list-style-type: none;
     margin-top: 20px;
@@ -41,7 +53,7 @@ hr {
     text-decoration-thickness: 0.15rem;
 }
 
-/* Language Menu */
+/* LANGUAGE MENU -------------------------------------- */
 .menu__language {
     text-align: right;
     margin-bottom: 8px;
@@ -104,6 +116,9 @@ hr {
     width: 100%;
     -webkit-animation-name: slideOut;
   animation-name: slideOut;
+  position: fixed;
+  top: 108;
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
 }
 
 .menu__main--hidden {
@@ -199,10 +214,14 @@ hr {
 }
 
 
+/*--------------------------------------------------------------*/
+/* MAIN --------------------------------------------------------*/
+/*--------------------------------------------------------------*/
 
 
-
-
+main {
+    margin-top: 150px;
+}
 
 
 
