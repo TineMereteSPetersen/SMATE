@@ -7,6 +7,7 @@ body {
 h2 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
 hr {
@@ -14,9 +15,28 @@ hr {
     width: 50%;
 }
 
+.blueButton {
+    background-color:#0077c8;
+    border: 2px solid #0077c8;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.blueButton:hover {
+    background-color: white;
+    color:#0077c8;
+}
 .centerwrap {
     display: grid;
     justify-content: center;
+}
+
+.orange__title {
+    font-size: 1.5rem;
+    color: #EA8B2D;
+    text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------*/
@@ -58,6 +78,7 @@ header {
     text-align: right;
     margin-bottom: 8px;
     margin-right: 20px;
+    margin-top: -20px;
 }
 
 .menu__language li {
@@ -220,12 +241,58 @@ header {
 
 
 main {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
+.container {
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container--grey {
+    background-color: #efefef;
+}
+
+.intro__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:40px;
+}
+
+.intro__wrapperInner {
+    text-align: center;
+}
+
+.intro__icon {
+    max-width: 100px;
+}
+
+/* NPI consultent */
+
+.npiconsult__wrapper img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.npiconsult__wrapper a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0077c8;
+    margin-top: 10px;
+}
+
+/* About */
 
 
-
+.about__img--tech{
+    display: block;
+    max-width: 500px;
+    
+}
 
 /* .menu__item a:hover {
     color: #0077c8;
