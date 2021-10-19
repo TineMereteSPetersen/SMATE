@@ -33,6 +33,11 @@ hr {
     justify-content: center;
 }
 
+.menu__item a:hover {
+    color: #0077c8;
+}
+
+
 .orange__title {
     font-size: 1.5rem;
     color: #EA8B2D;
@@ -294,6 +299,31 @@ main {
     
 }
 
-/* .menu__item a:hover {
-    color: #0077c8;
-} */
+/*--------------------------------------------------------------*/
+/* MEDIA QUERYS ------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1000px) {
+    /* STYLES HERE */
+
+    .intro__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .intro__wrapperInner {
+        text-align: center;
+    }
+
+    .npiconsult__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding-top: 20px;
+    }
+
+    .blueButton {
+        margin-top: 20px;
+    }
+}
