@@ -19,6 +19,12 @@ hr {
     justify-content: center;
 }
 
+.orange__title {
+    font-size: 1.5rem;
+    color: #EA8B2D;
+    text-transform: uppercase;
+}
+
 /* MENU !!! */
 .menu {
     width: 100%;
@@ -147,6 +153,13 @@ main {
 .about__img--tech{
     display: block;
     max-width: 200px;
+    
+}
+
+/* cooperation aside */
+
+.cooperation{
+    display: block;
     
 }
 
