@@ -1,4 +1,4 @@
-body {
+ body {
     margin: 0;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
@@ -138,20 +138,17 @@ main {
     font-size: 1.5rem;
     text-decoration: none;
     color: #0077c8;
-    margin-top: 10px;
+    margin-top: 10px; */
 }
 
 /* About */
-.about__banner{
 
-}
 
 .about__img--tech{
     display: block;
-    max-width: 500px;
+    max-width: 200px;
     
 }
-
 
 
 /* Footer */
@@ -166,4 +163,11 @@ main {
     padding-bottom: 10px;
     position: relative;
     bottom: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer--wrapper a {
+    text-decoration: none;
+    color:white;
 }
