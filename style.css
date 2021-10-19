@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
 }
 
 h2 {
@@ -45,6 +46,10 @@ hr {
 }
 
 .blue__title {
+    color: #0077c8;
+}
+
+.fas {
     color: #0077c8;
 }
 
@@ -321,7 +326,7 @@ main {
 /* FOOTER ------------------------------------------------------*/
 /*--------------------------------------------------------------*/
 
-.footer--wrapper{
+.footer{
     display: block;
     width: 100%;
     color: rgb(211, 210, 210);
@@ -335,15 +340,54 @@ main {
     text-align: center;
 }
 
-.footer--wrapper a {
+.footer a {
     text-decoration: none;
     color:white;
 }
 
-.footer--wrapper a:hover {
+.footer a:hover {
     color: #0077c8;
 }
 
+footer ul {
+    padding: 0;
+}
+
+footer hr {
+    color:#0077c8;
+    border-top: solid 1px #0077c8;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.footer__address {
+    line-height: 1.7rem;
+}
+
+.footer ul, .footer__address {
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.copyright {
+    font-size: 0.8rem
+}
+
+footer .fab {
+    font-size: 2rem;
+}
+
+footer .fab, footer .fas {
+    margin-right: 5px;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+}
 /*--------------------------------------------------------------*/
 /* MEDIA QUERYS ------------------------------------------------*/
 /*--------------------------------------------------------------*/
@@ -378,6 +422,26 @@ main {
 
     .mobile__menu {
         display: none;
+    }
+
+    .footer--wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        font-size: 0.8rem;
+        /* align-items: center; */
+    }
+    .footer ul, .footer__address {
+        padding-bottom: 5px;
+    }
+
+    footer hr {
+        display: none;
+    }
+
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
 }
