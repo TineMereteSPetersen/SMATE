@@ -8,6 +8,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 hr {
@@ -39,14 +40,26 @@ hr {
 
 
 .orange__title {
-    font-size: 1.5rem;
     color: #EA8B2D;
     text-transform: uppercase;
+}
+
+.blue__title {
+    color: #0077c8;
 }
 
 /*--------------------------------------------------------------*/
 /* MENU --------------------------------------------------------*/
 /*--------------------------------------------------------------*/
+
+.desktop__menu {
+    display: none;
+}
+
+.menu__main--desktop li {
+        display: inline;
+        list-style-type: none;
+    }
 
 header {
     width: 100%;
@@ -57,6 +70,11 @@ header {
     position: fixed;
     top: 0;
     box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
+}
+
+.logo {
+    max-height: 32px;
+    align-self: center;
 }
 .menu__list li {
     list-style-type: none;
@@ -300,11 +318,38 @@ main {
 }
 
 /*--------------------------------------------------------------*/
+/* FOOTER ------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+.footer--wrapper{
+    display: block;
+    width: 100%;
+    color: rgb(211, 210, 210);
+    background-color: #1F1F1F;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer--wrapper a {
+    text-decoration: none;
+    color:white;
+}
+
+.footer--wrapper a:hover {
+    color: #0077c8;
+}
+
+/*--------------------------------------------------------------*/
 /* MEDIA QUERYS ------------------------------------------------*/
 /*--------------------------------------------------------------*/
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
     /* STYLES HERE */
 
     .intro__wrapper {
@@ -326,4 +371,13 @@ main {
     .blueButton {
         margin-top: 20px;
     }
+
+    .desktop__menu {
+        display: block;
+    }
+
+    .mobile__menu {
+        display: none;
+    }
+
 }
