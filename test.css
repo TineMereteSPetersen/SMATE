@@ -266,49 +266,56 @@ header {
 /* ------------------------------------------------------------ */
 /* BANNER------------------------------------------------------ */
 /* ------------------------------------------------------------ */
-/************************** 
-* Inner Banner styles 
-***************************/
-.about__banner{
-    margin-top: 140px;
-    background-color:#0077c8;
-}
-.inner-banner {
-    position: relative;
-    background: #f7f7f7;
+
+.banner{
+    
     background-size: cover;
-  }
-  .inner-banner:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
+    margin-top: 100px;
+    background-color:#0077c8;
+    background-image:url(/assets/banner_electronics.jpg);
+    background-repeat: no-repeat;
+    height: 10em;
+}
+
+.banner--box{
+    background:rgba(0, 119, 200, 0.85);
     height: 100%;
-    background: rgba(0, 119, 200, 0.85);
-    z-index: 0;
-  }
-  
-  .inner-banner h3 {
+    position: relative;
+    
+}
+
+.banner--title{
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    display: table-cell;
-    vertical-align: bottom;
-    font-size: 42px;
+    font-size: 2em;
     line-height: 60px;
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
-    text-align:right;
-    padding:0 20%;
-  }
-  
-  .inner-banner .box {
-    position: relative;
-    display: table;
-    height: 160px;
-    width: 100%;
     text-align: center;
-  }
+
+}
+
+.banner--divider{
+    width: 80%;
+}
+
+.banner--wrapper{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+.path li{
+    display:inline;
+    color: white;
+}
+
+.path li a{
+    color: white;
+    text-decoration: none;
+}
+
 
 /*--------------------------------------------------------------*/
 /* MAIN --------------------------------------------------------*/
@@ -368,6 +375,10 @@ main {
     display: block;
     max-width: 500px;
     
+}
+
+.cooperation ul{
+    list-style-type: none;
 }
 
 /*--------------------------------------------------------------*/
