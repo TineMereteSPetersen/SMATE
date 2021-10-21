@@ -370,15 +370,42 @@ main {
 
 /* About */
 
-
+.about{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 .about__img--tech{
-    display: block;
-    max-width: 500px;
-    
+    display: grid;
+    max-width: 100%;
+    grid-column:span  ;    
 }
 
-.cooperation ul{
+.about__cooperation ul{
     list-style-type: none;
+}
+
+/* our team */
+.about__ourTeam{
+
+}
+
+.about__ourTeam ul{
+list-style: none;
+}
+
+/* testimonials */
+
+.testimonial__wrapper{
+  margin-top: 10%;
+  display: grid;
+}
+.testimonial__wrapperInner{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: ;
+}
+.testimonial__wrapperInner--img{
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------*/
