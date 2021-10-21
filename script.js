@@ -27,7 +27,6 @@ function dropDown() {
     menu.classList.toggle('menu__main--show');
 }
 
-
 /* SLIDEBAR */
 const slides = document.querySelectorAll('.slide');
         const next = document.querySelector('#next');
