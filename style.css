@@ -407,7 +407,7 @@ main {
 }
 
 
-/* PROTOTYPE MATURING */
+/* PRODUCTION MATURING */
 
 .npiphase__phase {
     margin-left: 50px;
@@ -453,6 +453,34 @@ main {
 .Traceability img {
     width: 70%;
     justify-self: center;
+}
+
+
+/* PROTOTYPE MANUFACTURING */
+
+.production_audit__table th,
+td {
+    border: 1px solid #0077c8;
+}
+
+.production_audit__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.production_audit__table tr,
+td {
+    padding: 2%;
+}
+
+.production_audit__table tr {
+    height: 50px;
+}
+
+.production_audit__table th {
+    font-size: 1.4rem;
 }
 
 
@@ -791,26 +819,6 @@ footer h5 {
         display: grid;
         grid-template-columns: 3fr 2fr;
         align-items: center;
-    }
-    .production_audit__table th,
-    td {
-        border: 1px solid #0077c8;
-    }
-    .production_audit__table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .production_audit__table tr,
-    td {
-        padding: 2%;
-    }
-    .production_audit__table tr {
-        height: 50px;
-    }
-    .production_audit__table th {
-        font-size: 1.4rem;
     }
     /* Contact */
     .team__wrapper hr {
