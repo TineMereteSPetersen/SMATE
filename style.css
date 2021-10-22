@@ -422,45 +422,13 @@ main {
 
 /* PRODUCTION MATURING */
 
-.npiphase__phase {
+.indent {
     margin-left: 50px;
-}
-
-.npiphase__phase li {
-    list-style-type: none;
-}
-
-.npiphase__phase li:before {
-    content: "\f068";
-    /* FontAwesome Unicode */
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: -1.3em;
-    /* same as padding-left set on li */
-    width: 1.3em;
-    /* same as padding-left set on li */
-    color: #0077c8;
 }
 
 .npiphase__wrapper img {
     width: 75%;
     justify-self: center;
-}
-
-.keyprocedure__wrapper li {
-    list-style: none;
-}
-
-.keyprocedure__wrapper li:before {
-    content: "\f068";
-    /* FontAwesome Unicode */
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: -1.3em;
-    /* same as padding-left set on li */
-    width: 1.3em;
-    /* same as padding-left set on li */
-    color: #0077c8;
 }
 
 .Traceability img {
@@ -483,6 +451,10 @@ td {
     margin-bottom: 50px;
 }
 
+.production_audit img {
+    display: none;
+}
+
 .production_audit__table tr,
 td {
     padding: 2%;
@@ -494,6 +466,11 @@ td {
 
 .production_audit__table th {
     font-size: 1.4rem;
+}
+
+.production_optimization img {
+    width: 60%;
+    justify-self: center;
 }
 
 
@@ -832,6 +809,18 @@ footer h5 {
         display: grid;
         grid-template-columns: 3fr 2fr;
         align-items: center;
+    }
+    .production_audit img {
+        display: block;
+    }
+    .production_optimization {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 50px;
+        align-items: center;
+    }
+    .production_optimization img {
+        width: 100%;
     }
     /* Contact */
     .team__wrapper hr {
