@@ -709,6 +709,13 @@ footer h5 {
 
 /* change in grid set-up */
     
+    .supply__wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      padding-top: 20px;
+    }
+
     .about{
       grid-template-columns: 1fr 1fr;
     }
