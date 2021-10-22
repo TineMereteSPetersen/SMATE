@@ -411,6 +411,9 @@ main {
   list-style-type: none;
 }
 
+.fa-check-square{
+  color: #0077c8;
+}
 /* About */
 
 .about{
