@@ -57,6 +57,19 @@ li {
     color: #0077c8;
 }
 
+.minus {
+    list-style: none;
+}
+
+.minus:before {
+    content: "\f068";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    color: #0077c8;
+}
+
 
 /*--------------------------------------------------------------*/
 
@@ -418,7 +431,9 @@ main {
     list-style-type: none;
 }
 
-.supply__activity li {}
+.supply__activity li {
+    list-style-type: ;
+}
 
 .fa-check-square {
     color: #0077c8;
