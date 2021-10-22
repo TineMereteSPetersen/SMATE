@@ -18,43 +18,48 @@ hr {
 }
 
 .blueButton {
-  background-color:#0077c8;
-  border: 2px solid #0077c8;
-  color: white;
-  font-size: 1.5rem;
-  padding: 15px;
-  transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    background-color: #0077c8;
+    border: 2px solid #0077c8;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    transition: all .5s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .blueButton:hover {
-  background-color: white;
-  color:#0077c8;
+    background-color: white;
+    color: #0077c8;
 }
+
 .centerwrap {
-  display: grid;
-  justify-content: center;
+    display: grid;
+    justify-content: center;
 }
 
 .menu__item a:hover {
-  color: #0077c8;
+    color: #0077c8;
 }
 
-
 .orange__title {
-  color: #EA8B2D;
-  text-transform: uppercase;
+    color: #EA8B2D;
+    text-transform: uppercase;
 }
 
 .blue__title {
-  color: #0077c8;
+    color: #0077c8;
 }
 
 .fas {
-  color: #0077c8;
+    color: #0077c8;
 }
 
+
 /*--------------------------------------------------------------*/
+
+
 /* MENU --------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------*/
 
 .desktop__menu {
@@ -62,9 +67,9 @@ hr {
 }
 
 .menu__main--desktop li {
-        display: inline;
-        list-style-type: none;
-    }
+    display: inline;
+    list-style-type: none;
+}
 
 header {
     width: 100%;
@@ -82,6 +87,7 @@ header {
     max-height: 32px;
     align-self: center;
 }
+
 .menu__list li {
     list-style-type: none;
     margin-top: 20px;
@@ -102,7 +108,9 @@ header {
     text-decoration-thickness: 0.15rem;
 }
 
+
 /* LANGUAGE MENU -------------------------------------- */
+
 .menu__language {
     text-align: right;
     margin-bottom: 8px;
@@ -128,7 +136,9 @@ header {
     margin-left: 10px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #0077c8;
@@ -136,39 +146,43 @@ header {
     transition: 0.4s;
 }
 
+
 /* BURGER MENU ANIMATION -------------------------------------- */
 
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-.change .bar2 {opacity: 0;}
-  
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-  }
+}
 
-  .menu__wrapper {
+.menu__wrapper {
     display: flex;
     justify-content: space-between;
     width: 95%;
-    margin:auto;
-  }
+    margin: auto;
+}
+
 
 /* MENU SLIDER -------------------------------------- */
 
 .menu__main {
     background-color: #0077c8;
     margin-top: 5px;
-    position:absolute;
+    position: absolute;
     width: 100%;
     -webkit-animation-name: slideOut;
-  animation-name: slideOut;
-  position: fixed;
-  top: 108;
-  box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
+    animation-name: slideOut;
+    position: fixed;
+    top: 108;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
 }
 
 .menu__main--hidden {
@@ -178,113 +192,107 @@ header {
 
 .menu__main--show {
     max-height: 100%;
-    overflow:auto;
+    overflow: auto;
     -webkit-animation-name: slideIn;
-  animation-name: slideIn;
+    animation-name: slideIn;
 }
 
 @keyframes slideIn {
     0% {
-      transform: translateY(1rem);
-      opacity: 0;
+        transform: translateY(1rem);
+        opacity: 0;
     }
-  
     100% {
-      transform: translateY(0rem);
-      opacity: 1;
+        transform: translateY(0rem);
+        opacity: 1;
     }
-  
     0% {
-      transform: translateY(1rem);
-      opacity: 0;
+        transform: translateY(1rem);
+        opacity: 0;
     }
-  }
-  
-  @-webkit-keyframes slideIn {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 0;
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 1;
-    }
-  
-    0% {
-      -webkit-transform: translateY(0rem);
-      -webkit-opacity: 0;
-    }
-  }
+}
 
-  @keyframes slideOut {
+@-webkit-keyframes slideIn {
     0% {
-      transform: translateY(0rem);
-      opacity: 1;
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
     }
-  
     100% {
-      transform: translateY(1rem);
-      opacity: 0;
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
     }
-  
     0% {
-      transform: translateY(0rem);
-      opacity: 1;
+        -webkit-transform: translateY(0rem);
+        -webkit-opacity: 0;
     }
-  }
-  
-  @-webkit-keyframes slideOut {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 1;
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 0;
-    }
-  
-    0% {
-      -webkit-transform: translateY(1rem);
-      -webkit-opacity: 1;
-    }
-  }
+}
 
+@keyframes slideOut {
+    0% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    0% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 0;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 1;
+    }
+}
 
 .menu__main {
     animation-duration: 0.3s;
     -webkit-animation-duration: 0.3s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
-  }
+}
 
 .menu__main a {
     color: white;
 }
 
-/* ------------------------------------------------------------ */
-/* BANNER------------------------------------------------------ */
+
 /* ------------------------------------------------------------ */
 
-.banner{
-    
+
+/* BANNER------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+
+.banner {
     background-size: cover;
     margin-top: 100px;
-    background-color:#0077c8;
-    background-image:url(/assets/banner_electronics.jpg);
+    background-color: #0077c8;
+    background-image: url(/assets/banner_electronics.jpg);
     background-repeat: no-repeat;
     height: 10em;
 }
 
-.banner--box{
-    background:rgba(0, 119, 200, 0.85);
+.banner--box {
+    background: rgba(0, 119, 200, 0.85);
     height: 100%;
     position: relative;
-    
 }
 
-.banner--title{
+.banner--title {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-size: 2em;
@@ -293,44 +301,45 @@ header {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-
 }
 
-.banner--divider{
+.banner--divider {
     width: 83%;
 }
 
-.banner--wrapper{
+.banner--wrapper {
     position: absolute;
     bottom: 0;
     margin: auto;
     width: 100%;
 }
 
-.path{
-  margin-left: 3%;
+.path {
+    margin-left: 3%;
 }
 
-.path li{
-    display:inline;
+.path li {
+    display: inline;
     color: white;
 }
 
-.path li a{
+.path li a {
     color: white;
     text-decoration: none;
 }
 
 
 /*--------------------------------------------------------------*/
-/* MAIN --------------------------------------------------------*/
-/*--------------------------------------------------------------*/
 
+
+/* MAIN --------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
 
 main {
     margin-top: 100px;
 }
-
 
 .container {
     padding: 30px;
@@ -347,7 +356,7 @@ main {
 .intro__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .intro__wrapperInner {
@@ -357,6 +366,7 @@ main {
 .intro__icon {
     max-width: 100px;
 }
+
 
 /* NPI consultent */
 
@@ -373,132 +383,135 @@ main {
     margin-top: 10px;
 }
 
+
 /* Supplier */
 
-.supply{
-  
+.supply {}
+
+.supply__title {
+    font-size: 1.5em;
 }
 
-.supply__title{
-
+.supply--img {
+    max-width: 100%;
 }
 
-.supply--img{
-  max-width: 100%;
+.supply__sourcing {}
+
+.supply__sourcing ul {
+    list-style-type: none;
 }
 
-.supply__sourcing{
+.supply__trading {}
 
+.supply__trading ul {
+    list-style-type: none;
 }
 
-.supply__sourcing ul{
-  list-style-type: none;
+.supply__products {}
+
+.supply__products ul {
+    list-style-type: none;
 }
 
-.supply__trading{
-
+.fa-check-square {
+    color: #0077c8;
 }
 
-.supply__trading ul{
-  list-style-type: none;
-}
 
-.supply__products{
-
-}
-
-.supply__products ul{
-  list-style-type: none;
-}
-
-.fa-check-square{
-  color: #0077c8;
-}
 /* About */
 
-.about{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.about__title{
-  margin-bottom: 10%;
-  display: grid;
-  grid-column-start:1;
-  grid-column-end:3;
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-.about__img--tech{
-  display: grid;
-  max-width: 100%;
-  grid-column-start:1;
-  grid-column-end:3;
-
+.about__title {
+    margin-bottom: 10%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.about__text{
-  display: grid;
-  grid-column:span 2 ;
+.about__img--tech {
+    display: grid;
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.about__cooperation ul{
-  list-style-type: none;
+.about__text {
+    display: grid;
+    grid-column: span 2;
 }
+
+.about__cooperation ul {
+    list-style-type: none;
+}
+
 
 /* our team */
 
-.profile{
-  display: block;
-  max-width: 50%;
-  margin-top: 8%;
-  margin-left: auto;
-  margin-right: auto;
+.profile {
+    display: block;
+    max-width: 50%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.profile--title{
- text-align: center;
- display: block;
- text-decoration: none;
- color:#0077c8;
- font-weight: 600;
- margin-top:2%;
- font-size: 1.1rem;
+.profile--title {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #0077c8;
+    font-weight: 600;
+    margin-top: 2%;
+    font-size: 1.1rem;
 }
 
-.about__ourTeam ul{
-  list-style: none;
+.about__ourTeam ul {
+    list-style: none;
 }
+
 
 /* testimonials */
 
-.testimonial__wrapper{
-  margin-top: 10%;
-  display: grid;
-}
-.testimonial__wrapperInner{
-  max-width: 100%;
-  display: grid;
-  text-align: center;
-  
-}
-.testimonial__wrapperInner a{
-  text-decoration: none;
-  color: #0077c8;
-  font-weight: 600;
+.testimonial__wrapper {
+    margin-top: 10%;
+    display: grid;
 }
 
-.testimonial__wrapperInner--img{
-  max-width: 100%;
+.testimonial__wrapperInner {
+    max-width: 100%;
+    display: grid;
+    text-align: center;
 }
 
-.testimonial__wrapperInner--img img{
-  height: 180px;
+.testimonial__wrapperInner a {
+    text-decoration: none;
+    color: #0077c8;
+    font-weight: 600;
 }
+
+.testimonial__wrapperInner--img {
+    max-width: 100%;
+}
+
+.testimonial__wrapperInner--img img {
+    height: 180px;
+}
+
 
 /*--------------------------------------------------------------*/
+
+
 /* FOOTER ------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------*/
 
-.footer{
+.footer {
     display: block;
     width: 100%;
     color: rgb(211, 210, 210);
@@ -514,7 +527,7 @@ main {
 
 .footer a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .footer a:hover {
@@ -526,7 +539,7 @@ footer ul {
 }
 
 footer hr {
-    color:#0077c8;
+    color: #0077c8;
     border-top: solid 1px #0077c8;
     border-bottom: none;
     border-left: none;
@@ -539,7 +552,8 @@ footer hr {
     line-height: 1.7rem;
 }
 
-.footer ul, .footer__address {
+.footer ul,
+.footer__address {
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -553,7 +567,8 @@ footer .fab {
     font-size: 2rem;
 }
 
-footer .fab, footer .fas {
+footer .fab,
+footer .fas {
     margin-right: 5px;
 }
 
@@ -563,7 +578,11 @@ footer h5 {
 
 
 /*--------------------------------------------------------------*/
+
+
 /* SLIDEBAR ----------------------------------------------------*/
+
+
 /*--------------------------------------------------------------*/
 
 .slider {
@@ -571,9 +590,9 @@ footer h5 {
     overflow: hidden;
     height: 70vh;
     max-width: 100vw;
-  }
-  
-  .slide {
+}
+
+.slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -581,45 +600,44 @@ footer h5 {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-  
-  .slide.current {
+}
+
+.slide.current {
     opacity: 1;
-  }
-  
-  .slide .content {
+}
+
+.slide .content {
     position: absolute;
     bottom: 70px;
-
     opacity: 0;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
     padding: 35px;
-  }
-  
-  .slide .content h1 {
+}
+
+.slide .content h1 {
     margin-bottom: 10px;
     transition: all 0.7s ease-in-out 0.3s;
-  }
-  
-  .slide.current .content {
+}
+
+.slide.current .content {
     opacity: 1;
-  }
-  
-  .buttons button#next {
+}
+
+.buttons button#next {
     position: absolute;
     top: 40%;
     right: 15px;
-  }
-  
-  .buttons button#prev {
+}
+
+.buttons button#prev {
     position: absolute;
     top: 40%;
     left: 15px;
-  }
-  
-  .buttons button {
+}
+
+.buttons button {
     border: 2px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -627,133 +645,127 @@ footer h5 {
     padding: 13px 15px;
     border-radius: 50%;
     outline: none;
-  }
-  
-  .buttons button:hover {
+}
+
+.buttons button:hover {
     background-color: #fff;
     color: #333;
-  }
-  
-  @media (max-width: 500px) {
+}
+
+@media (max-width: 500px) {
     .slide .content {
-      bottom: -300px;
-      left: 0;
-      width: 100%;
+        bottom: -300px;
+        left: 0;
+        width: 100%;
     }
-  }
+}
 
-  /* Backgorund Images */
- 
+
+/* Backgorund Images */
+
 .slide:first-child {
-    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(2) {
-    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(3) {
-    background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(4) {
-    background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(5) {
-    background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
-      center top/cover;
-  } 
-  .slide:nth-child(6)  {
-    background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
-      center center/cover;
-  }
+    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat center top/cover;
+}
 
+.slide:nth-child(2) {
+    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+    background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+    background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+    background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat center center/cover;
+}
 
 
 /*--------------------------------------------------------------*/
+
+
 /* MEDIA QUERYS ------------------------------------------------*/
-/*--------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------*/
 
 @media screen and (min-width: 1050px) {
     /* STYLES HERE */
-
     .intro__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
     .intro__wrapperInner {
         text-align: center;
     }
-
     .npiconsult__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         padding-top: 20px;
     }
-
     .blueButton {
         margin-top: 20px;
     }
-
     .desktop__menu {
         display: block;
     }
-
     .mobile__menu {
         display: none;
     }
-
-/* change in grid set-up */
-    
-    .supply__wrapper{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      padding-top: 20px;
+    /* change in grid set-up */
+    .supply__special--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: auto;
     }
-
-    .about{
-      grid-template-columns: 1fr 1fr;
+    .supply__special--title {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
-
-    .about__img--tech{
-      display: grid;
-      max-width: 100%;
-      grid-column-start:2;
-      grid-column-end:3;
-    
+    .supply__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding-top: 20px;
     }
-    
-    .about__text{
-      display: grid;
-      grid-column-start:1;
-      grid-column-end:2;
-      grid-row-start:2;
-      grid-row-end:4;
-
+    .about {
+        grid-template-columns: 1fr 1fr;
     }
-
-    .testimonial__wrapper{
-      grid-template-columns: 1fr 1fr;
+    .about__img--tech {
+        display: grid;
+        max-width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
-
-    .testimonial__wrapper--title{
-      display: grid;
-      grid-column-start:1;
-      grid-column-end:3;
-
+    .about__text {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
     }
-
-    .about__sensor{
-      text-align: center;
-      margin-top:5%;
+    .testimonial__wrapper {
+        grid-template-columns: 1fr 1fr;
     }
-
-/* footer */
+    .testimonial__wrapper--title {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .about__sensor {
+        text-align: center;
+        margin-top: 5%;
+    }
+    /* footer */
     .footer--wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -761,18 +773,15 @@ footer h5 {
         font-size: 0.8rem;
         /* align-items: center; */
     }
-
-    .footer ul, .footer__address {
+    .footer ul,
+    .footer__address {
         padding-bottom: 5px;
     }
-
     footer hr {
         display: none;
     }
-
     .container {
         padding-left: 10%;
         padding-right: 10%;
     }
-
 }
