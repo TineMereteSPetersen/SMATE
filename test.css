@@ -373,6 +373,44 @@ main {
     margin-top: 10px;
 }
 
+/* Supplier */
+
+.supply{
+
+}
+
+.supply__title{
+
+}
+
+.supply--img{
+  max-width: 100%;
+}
+
+.supply__sourcing{
+
+}
+
+.supply__sourcing ul{
+  list-style-type: none;
+}
+
+.supply__trading{
+
+}
+
+.supply__trading ul{
+  list-style-type: none;
+}
+
+.supply__products{
+
+}
+
+.supply__products ul{
+  list-style-type: none;
+}
+
 /* About */
 
 .about{
