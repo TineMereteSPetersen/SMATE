@@ -474,6 +474,14 @@ td {
 }
 
 
+/* CERTFICICATION */
+
+.sgs img {
+    width: 70%;
+    justify-self: center;
+}
+
+
 /* About */
 
 .about__img--tech {
@@ -821,6 +829,15 @@ footer h5 {
     }
     .production_optimization img {
         width: 100%;
+    }
+    /* CERTIFICATION -------------------------------------- */
+    .sgs,
+    .orientation,
+    .pretest {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 50px;
     }
     /* Contact */
     .team__wrapper hr {
