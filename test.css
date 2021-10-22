@@ -485,7 +485,10 @@ main {
 
 .testimonial__wrapperInner--img{
   max-width: 100%;
-  max-height: 80%;
+}
+
+.testimonial__wrapperInner--img img{
+  height: 180px;
 }
 
 /*--------------------------------------------------------------*/
