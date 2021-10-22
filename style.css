@@ -482,6 +482,23 @@ td {
 }
 
 
+/* MASS PRODUCTION -------------------------------------- */
+
+.documentation {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.documentation img {
+    width: 70%;
+}
+
+.documentation hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
 /* About */
 
 .about__img--tech {
@@ -838,6 +855,15 @@ footer h5 {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 50px;
+    }
+    /* MASS PRODUCTION -------------------------------------- */
+    .documentation hr {
+        display: none;
+    }
+    .documentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
     /* Contact */
     .team__wrapper hr {
