@@ -169,6 +169,7 @@ header {
   position: fixed;
   top: 108;
   box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
+  pointer-events: none;
 }
 
 .menu__main--hidden {
@@ -176,11 +177,16 @@ header {
     overflow: hidden;
 }
 
+.mobile__menu .menu__main {
+  overflow: hidden;
+}
+
 .menu__main--show {
     max-height: 100%;
     overflow:auto;
     -webkit-animation-name: slideIn;
   animation-name: slideIn;
+  pointer-events: auto;
 }
 
 @keyframes slideIn {
@@ -265,6 +271,66 @@ header {
 
 
 /*--------------------------------------------------------------*/
+/* BANNER ------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+
+.banner{
+    
+  background-size: cover;
+  margin-top: 100px;
+  background-color:#0077c8;
+  background-image:url(/assets/banner_electronics.jpg);
+  background-repeat: no-repeat;
+  height: 10em;
+}
+
+.banner--box{
+  background:rgba(0, 119, 200, 0.85);
+  height: 100%;
+  position: relative;
+  
+}
+
+.banner--title{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 2em;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.banner--divider{
+  width: 83%;
+}
+
+.banner--wrapper{
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.path{
+margin-left: 3%;
+}
+
+.path li{
+  display:inline;
+  color: white;
+}
+
+.path li a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------*/
 /* MAIN --------------------------------------------------------*/
 /*--------------------------------------------------------------*/
 
@@ -335,7 +401,7 @@ main {
 
 .team__wrapper li {
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 45px;
 }
 
 .team__wrapper .fas {
@@ -371,6 +437,10 @@ main {
   margin: 0;
 }
 
+.flagimg {
+  max-width: 100px;
+}
+
 .office__wrapper li {
   list-style: none;
   margin-top: 10px;
@@ -388,6 +458,11 @@ main {
 
 .office__wrapper--desktop {
   display: none;
+}
+
+.office__wrapper hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /*--------------------------------------------------------------*/
@@ -632,6 +707,11 @@ footer h5 {
       gap: 50px;
     }
 
+    .team__wrapper a {
+      font-size: 0.80rem;
+    }
+    
+
     .office__wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -649,4 +729,5 @@ footer h5 {
     .office__wrapper--mobile {
       display: none;
     }
+
 }
