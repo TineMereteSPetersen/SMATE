@@ -17,6 +17,10 @@ hr {
     width: 50%;
 }
 
+li {
+    list-style-type: none;
+}
+
 .blueButton {
     background-color: #0077c8;
     border: 2px solid #0077c8;
@@ -413,6 +417,8 @@ main {
 .supply__products ul {
     list-style-type: none;
 }
+
+.supply__activity li {}
 
 .fa-check-square {
     color: #0077c8;
