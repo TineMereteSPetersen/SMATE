@@ -18,7 +18,7 @@ hr {
 }
 
 .blueButton {
-    background-color:#0077c8;
+    background-color: #0077c8;
     border: 2px solid #0077c8;
     color: white;
     font-size: 1.5rem;
@@ -28,17 +28,18 @@ hr {
 
 .blueButton:hover {
     background-color: white;
-    color:#0077c8;
+    color: #0077c8;
 }
+
 .centerwrap {
     display: grid;
     justify-content: center;
+    width: 100%;
 }
 
 .menu__item a:hover {
     color: #0077c8;
 }
-
 
 .orange__title {
     color: #EA8B2D;
@@ -53,8 +54,29 @@ hr {
     color: #0077c8;
 }
 
+.checkmark {
+    list-style: none;
+}
+
+.checkmark:before {
+    content: "\f00c";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    color: #0077c8;
+}
+
+
 /*--------------------------------------------------------------*/
+
+
 /* MENU --------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------*/
 
 .desktop__menu {
@@ -62,9 +84,9 @@ hr {
 }
 
 .menu__main--desktop li {
-        display: inline;
-        list-style-type: none;
-    }
+    display: inline;
+    list-style-type: none;
+}
 
 header {
     width: 100%;
@@ -82,6 +104,7 @@ header {
     max-height: 32px;
     align-self: center;
 }
+
 .menu__list li {
     list-style-type: none;
     margin-top: 20px;
@@ -102,7 +125,9 @@ header {
     text-decoration-thickness: 0.15rem;
 }
 
+
 /* LANGUAGE MENU -------------------------------------- */
+
 .menu__language {
     text-align: right;
     margin-bottom: 8px;
@@ -128,7 +153,9 @@ header {
     margin-left: 10px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #0077c8;
@@ -136,40 +163,44 @@ header {
     transition: 0.4s;
 }
 
+
 /* BURGER MENU ANIMATION -------------------------------------- */
 
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-.change .bar2 {opacity: 0;}
-  
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-  }
+}
 
-  .menu__wrapper {
+.menu__wrapper {
     display: flex;
     justify-content: space-between;
     width: 95%;
-    margin:auto;
-  }
+    margin: auto;
+}
+
 
 /* MENU SLIDER -------------------------------------- */
 
 .menu__main {
     background-color: #0077c8;
     margin-top: 5px;
-    position:absolute;
+    position: absolute;
     width: 100%;
     -webkit-animation-name: slideOut;
-  animation-name: slideOut;
-  position: fixed;
-  top: 108;
-  box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
-  pointer-events: none;
+    animation-name: slideOut;
+    position: fixed;
+    top: 108;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 0.2);
+    pointer-events: none;
 }
 
 .menu__main--hidden {
@@ -178,92 +209,83 @@ header {
 }
 
 .mobile__menu .menu__main {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .menu__main--show {
     max-height: 100%;
-    overflow:auto;
+    overflow: auto;
     -webkit-animation-name: slideIn;
-  animation-name: slideIn;
-  pointer-events: auto;
+    animation-name: slideIn;
+    pointer-events: auto;
 }
 
 @keyframes slideIn {
     0% {
-      transform: translateY(1rem);
-      opacity: 0;
+        transform: translateY(1rem);
+        opacity: 0;
     }
-  
     100% {
-      transform: translateY(0rem);
-      opacity: 1;
+        transform: translateY(0rem);
+        opacity: 1;
     }
-  
     0% {
-      transform: translateY(1rem);
-      opacity: 0;
+        transform: translateY(1rem);
+        opacity: 0;
     }
-  }
-  
-  @-webkit-keyframes slideIn {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 0;
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 1;
-    }
-  
-    0% {
-      -webkit-transform: translateY(0rem);
-      -webkit-opacity: 0;
-    }
-  }
+}
 
-  @keyframes slideOut {
+@-webkit-keyframes slideIn {
     0% {
-      transform: translateY(0rem);
-      opacity: 1;
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
     }
-  
     100% {
-      transform: translateY(1rem);
-      opacity: 0;
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
     }
-  
     0% {
-      transform: translateY(0rem);
-      opacity: 1;
+        -webkit-transform: translateY(0rem);
+        -webkit-opacity: 0;
     }
-  }
-  
-  @-webkit-keyframes slideOut {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 1;
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 0;
-    }
-  
-    0% {
-      -webkit-transform: translateY(1rem);
-      -webkit-opacity: 1;
-    }
-  }
+}
 
+@keyframes slideOut {
+    0% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    0% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 0;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 1;
+    }
+}
 
 .menu__main {
     animation-duration: 0.3s;
     -webkit-animation-duration: 0.3s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
-  }
+}
 
 .menu__main a {
     color: white;
@@ -271,69 +293,72 @@ header {
 
 
 /*--------------------------------------------------------------*/
+
+
 /* BANNER ------------------------------------------------------*/
-/*--------------------------------------------------------------*/
-
-
-.banner{
-    
-  background-size: cover;
-  margin-top: 100px;
-  background-color:#0077c8;
-  background-image:url(/assets/banner_electronics.jpg);
-  background-repeat: no-repeat;
-  height: 10em;
-}
-
-.banner--box{
-  background:rgba(0, 119, 200, 0.85);
-  height: 100%;
-  position: relative;
-  
-}
-
-.banner--title{
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  font-size: 2em;
-  line-height: 60px;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-
-}
-
-.banner--divider{
-  width: 83%;
-}
-
-.banner--wrapper{
-  position: absolute;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-}
-
-.path{
-margin-left: 3%;
-}
-
-.path li{
-  display:inline;
-  color: white;
-}
-
-.path li a{
-  color: white;
-  text-decoration: none;
-}
 
 
 /*--------------------------------------------------------------*/
+
+.banner {
+    background-size: cover;
+    margin-top: 100px;
+    background-color: #0077c8;
+    background-image: url(/assets/banner_electronics.jpg);
+    background-repeat: no-repeat;
+    height: 10em;
+}
+
+.banner--box {
+    background: rgba(0, 119, 200, 0.85);
+    height: 100%;
+    position: relative;
+}
+
+.banner--title {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 2em;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner--divider {
+    width: 83%;
+}
+
+.banner--wrapper {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.path {
+    margin-left: 3%;
+}
+
+.path li {
+    display: inline;
+    color: white;
+}
+
+.path li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
 /* MAIN --------------------------------------------------------*/
-/*--------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------*/
 
 main {
     margin-top: 100px;
@@ -354,7 +379,7 @@ main {
 .intro__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .intro__wrapperInner {
@@ -364,6 +389,7 @@ main {
 .intro__icon {
     max-width: 100px;
 }
+
 
 /* NPI consultent */
 
@@ -380,96 +406,151 @@ main {
     margin-top: 10px;
 }
 
+
+/* PROTOTYPE MATURING */
+
+.npiphase__phase {
+    margin-left: 50px;
+}
+
+.npiphase__phase li {
+    list-style-type: none;
+}
+
+.npiphase__phase li:before {
+    content: "\f068";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    color: #0077c8;
+}
+
+.npiphase__wrapper img {
+    width: 75%;
+    justify-self: center;
+}
+
+.keyprocedure__wrapper li {
+    list-style: none;
+}
+
+.keyprocedure__wrapper li:before {
+    content: "\f068";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    color: #0077c8;
+}
+
+.Traceability img {
+    width: 70%;
+    justify-self: center;
+}
+
+
 /* About */
 
-
-.about__img--tech{
+.about__img--tech {
     display: block;
     max-width: 500px;
-    
 }
+
 
 /* Contact */
 
 .team__wrapper {
-  text-align: center;
+    text-align: center;
 }
 
-.team__wrapper h3, .team__wrapper h4 {
-  margin: 5px;
+.team__wrapper h3,
+.team__wrapper h4 {
+    margin: 5px;
 }
 
 .team__wrapper li {
-  list-style-type: none;
-  margin-right: 45px;
+    list-style-type: none;
+    margin-right: 45px;
 }
 
 .team__wrapper .fas {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .team__wrapper a {
-  color: #0077c8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
+    color: #0077c8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .team__wrapper .fa-linkedin {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .team__wrapper hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .team__wrapperInner img {
-  max-width: 366px;
+    max-width: 366px;
 }
 
 .office__wrapper h2 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .office__wrapper h3 {
-  text-align: center;
-  margin: 0;
+    text-align: center;
+    margin: 0;
 }
 
 .flagimg {
-  max-width: 100px;
+    max-width: 100px;
 }
 
 .office__wrapper li {
-  list-style: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .office__wrapper .fas {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .office__wrapper a {
-  color: #0077c8;
-  text-decoration: none;
+    color: #0077c8;
+    text-decoration: none;
 }
 
 .office__wrapper--desktop {
-  display: none;
+    display: none;
 }
 
 .office__wrapper hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-/*--------------------------------------------------------------*/
-/* FOOTER ------------------------------------------------------*/
+
 /*--------------------------------------------------------------*/
 
-.footer{
+
+/* FOOTER ------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
+
+.footer {
     display: block;
     width: 100%;
     color: rgb(211, 210, 210);
@@ -485,7 +566,7 @@ main {
 
 .footer a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .footer a:hover {
@@ -497,7 +578,7 @@ footer ul {
 }
 
 footer hr {
-    color:#0077c8;
+    color: #0077c8;
     border-top: solid 1px #0077c8;
     border-bottom: none;
     border-left: none;
@@ -510,7 +591,8 @@ footer hr {
     line-height: 1.7rem;
 }
 
-.footer ul, .footer__address {
+.footer ul,
+.footer__address {
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -524,7 +606,8 @@ footer .fab {
     font-size: 2rem;
 }
 
-footer .fab, footer .fas {
+footer .fab,
+footer .fas {
     margin-right: 5px;
 }
 
@@ -534,7 +617,11 @@ footer h5 {
 
 
 /*--------------------------------------------------------------*/
+
+
 /* SLIDEBAR ----------------------------------------------------*/
+
+
 /*--------------------------------------------------------------*/
 
 .slider {
@@ -542,9 +629,9 @@ footer h5 {
     overflow: hidden;
     height: 70vh;
     max-width: 100vw;
-  }
-  
-  .slide {
+}
+
+.slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -552,45 +639,44 @@ footer h5 {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-  
-  .slide.current {
+}
+
+.slide.current {
     opacity: 1;
-  }
-  
-  .slide .content {
+}
+
+.slide .content {
     position: absolute;
     bottom: 70px;
-
     opacity: 0;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
     padding: 35px;
-  }
-  
-  .slide .content h1 {
+}
+
+.slide .content h1 {
     margin-bottom: 10px;
     transition: all 0.7s ease-in-out 0.3s;
-  }
-  
-  .slide.current .content {
+}
+
+.slide.current .content {
     opacity: 1;
-  }
-  
-  .buttons button#next {
+}
+
+.buttons button#next {
     position: absolute;
     top: 40%;
     right: 15px;
-  }
-  
-  .buttons button#prev {
+}
+
+.buttons button#prev {
     position: absolute;
     top: 40%;
     left: 15px;
-  }
-  
-  .buttons button {
+}
+
+.buttons button {
     border: 2px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -598,86 +684,150 @@ footer h5 {
     padding: 13px 15px;
     border-radius: 50%;
     outline: none;
-  }
-  
-  .buttons button:hover {
+}
+
+.buttons button:hover {
     background-color: #fff;
     color: #333;
-  }
-  
-  @media (max-width: 500px) {
+}
+
+@media (max-width: 500px) {
     .slide .content {
-      bottom: -300px;
-      left: 0;
-      width: 100%;
+        bottom: -300px;
+        left: 0;
+        width: 100%;
     }
-  }
+}
 
-  /* Backgorund Images */
- 
+
+/* Backgorund Images */
+
 .slide:first-child {
-    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(2) {
-    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(3) {
-    background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(4) {
-    background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(5) {
-    background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
-      center top/cover;
-  } 
-  .slide:nth-child(6)  {
-    background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
-      center center/cover;
-  }
+    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat center top/cover;
+}
 
+.slide:nth-child(2) {
+    background: url('https://www.smatetech.com/cms/lib/banner/1592906250China electronic manufacturing.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+    background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+    background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+    background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat center center/cover;
+}
 
 
 /*--------------------------------------------------------------*/
+
+
 /* MEDIA QUERYS ------------------------------------------------*/
-/*--------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------*/
 
 @media screen and (min-width: 1050px) {
     /* STYLES HERE */
-
+    /* GENERAL */
+    .blueButton {
+        margin-top: 20px;
+    }
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    /* MENU */
+    .desktop__menu {
+        display: block;
+    }
+    .mobile__menu {
+        display: none;
+    }
+    /* HOME - NPI Consult */
     .intro__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
     .intro__wrapperInner {
         text-align: center;
     }
-
     .npiconsult__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         padding-top: 20px;
     }
-
-    .blueButton {
-        margin-top: 20px;
+    /* Production Maturing */
+    .npiphase__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
     }
-
-    .desktop__menu {
-        display: block;
+    .npiphase__wrapper img {
+        width: 100%;
     }
-
-    .mobile__menu {
+    .keyprocedure {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+    .Traceability {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+    }
+    /* Prototype manufacturing */
+    .production_audit {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+    }
+    .production_audit__table th,
+    td {
+        border: 1px solid #EA8B2D;
+    }
+    .production_audit__table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 50px;
+    }
+    /* Contact */
+    .team__wrapper hr {
         display: none;
     }
-
+    .team__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+    .team__wrapper a {
+        font-size: 0.80rem;
+    }
+    .office__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .office__wrapper hr {
+        display: none;
+    }
+    .office__wrapper--desktop {
+        display: block;
+    }
+    .office__wrapper--mobile {
+        display: none;
+    }
+    /* FOOTER */
     .footer--wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -685,49 +835,11 @@ footer h5 {
         font-size: 0.8rem;
         /* align-items: center; */
     }
-    .footer ul, .footer__address {
+    .footer ul,
+    .footer__address {
         padding-bottom: 5px;
     }
-
     footer hr {
         display: none;
     }
-
-    .container {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .team__wrapper hr {
-      display: none;
-    }
-    .team__wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 50px;
-    }
-
-    .team__wrapper a {
-      font-size: 0.80rem;
-    }
-    
-
-    .office__wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-    }
-
-    .office__wrapper hr {
-      display: none;
-    }
-
-    .office__wrapper--desktop {
-      display: block;
-    }
-
-    .office__wrapper--mobile {
-      display: none;
-    }
-
 }
