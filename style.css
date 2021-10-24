@@ -499,6 +499,41 @@ td {
 }
 
 
+/* Supplier */
+
+.supply {}
+
+.supply__title {
+    font-size: 1.5em;
+}
+
+.supply--img {
+    max-width: 100%;
+}
+
+.supply__sourcing {}
+
+.supply__sourcing ul {
+    list-style-type: none;
+}
+
+.supply__trading {}
+
+.supply__trading ul {
+    list-style-type: none;
+}
+
+.supply__products {}
+
+.supply__products ul {
+    list-style-type: none;
+}
+
+.fa-check-square {
+    color: #0077c8;
+}
+
+
 /* About */
 
 .about {
