@@ -976,6 +976,52 @@ footer h5 {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
+    /* supply------------------------------------------------ */
+    .supply__special--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: auto;
+    }
+    .supply__special--title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .supply__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding-top: 20px;
+    }
+    /* about------------------------------------------------- */
+    .about {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about__img--tech {
+        display: grid;
+        max-width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .about__text {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .testimonial__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .testimonial__wrapper--title {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .about__sensor {
+        text-align: center;
+        margin-top: 5%;
+    }
     /* Contact */
     .team__wrapper hr {
         display: none;
