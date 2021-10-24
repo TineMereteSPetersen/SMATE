@@ -501,9 +501,85 @@ td {
 
 /* About */
 
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about__title {
+    margin-bottom: 10%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .about__img--tech {
+    display: grid;
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.about__text {
+    display: grid;
+    grid-column: span 2;
+}
+
+.about__cooperation ul {
+    list-style-type: none;
+}
+
+
+/* our team */
+
+.profile {
     display: block;
-    max-width: 500px;
+    max-width: 50%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile--title {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #0077c8;
+    font-weight: 600;
+    margin-top: 2%;
+    font-size: 1.1rem;
+}
+
+.about__ourTeam ul {
+    list-style: none;
+}
+
+
+/* testimonials */
+
+.testimonial__wrapper {
+    margin-top: 10%;
+    display: grid;
+}
+
+.testimonial__wrapperInner {
+    max-width: 100%;
+    display: grid;
+    text-align: center;
+}
+
+.testimonial__wrapperInner a {
+    text-decoration: none;
+    color: #0077c8;
+    font-weight: 600;
+}
+
+.testimonial__wrapperInner--img {
+    max-width: 100%;
+}
+
+.testimonial__wrapperInner--img img {
+    height: 180px;
 }
 
 
